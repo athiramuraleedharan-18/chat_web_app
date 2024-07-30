@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f0f8ff, #e6e6fa); /* Add a gradient background */
+            font-family: 'Poppins', sans-serif;
+        }
+        .landing-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .landing-content {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .landing-image {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        .start-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .start-button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="landing-container">
+        <div class="landing-content">
+            <img src="assets/bot.gif" alt="Chatbot Icon" class="landing-image">
+            <h1>Welcome to ChatBot</h1>
+            <button id="start-chat" class="start-button">Let's Start</button>
+        </div>
+    </div>
+    <script>
+        document.getElementById('start-chat').addEventListener('click', () => {
+            window.location.href = '/chat';
+        });
+    </script>
+</body>
+</html>

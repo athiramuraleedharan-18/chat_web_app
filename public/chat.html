@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="tab" id="newChatTab">New Chat</div>
+        <div class="tab" id="historyTab">History</div>
+    </div>
+    <div class="content">
+        <div class="chat-container" id="chatContainer">
+            <div class="chat-area" id="chatArea"></div>
+            <div class="input-container">
+                <input type="text" class="input-field" id="inputField" placeholder="Type a message...">
+                <button class="send-button" id="sendButton">Send</button>
+            </div>
+        </div>
+        <div class="history-container" id="historyContainer" style="display: none;">
+            <!-- History content will be dynamically inserted here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
